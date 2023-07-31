@@ -9,7 +9,7 @@ https://github.com/chen-rn/CUA
 
 **Client and Server** 
 
-Next 13 (pages),
+Next 13 (pages) - can easily extend to New App Router,
 Expo 49,
 Solito 4,
 TRPC,

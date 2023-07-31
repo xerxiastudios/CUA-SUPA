@@ -41,8 +41,9 @@ export function HomeScreen() {
           </H1>
         </XStack>
         <Paragraph ta="center">
-          This is a demo for create-universal-app. To read more about the
-          philosophy behind it, visit{" "}
+          This is a demo for create-universal-app - without supabase. Give love
+          to the original CUA repo. To read more about the philosophy behind it,
+          visit{" "}
           <Anchor
             color="$color12"
             href="https://github.com/chen-rn/create-universal-app"
@@ -53,7 +54,7 @@ export function HomeScreen() {
           (give it a ⭐️ if you like it!)
         </Paragraph>
         <Paragraph ta="center">
-          This template uses Expo, Next, Solito, tRPC, Tamagui, Clerk, and
+          This template uses Expo, Next, Solito, tRPC, Tamagui, Supabase, and
           Prisma. If you're a beginner and is a little overwhelmed, I've also
           made a{" "}
           <Anchor

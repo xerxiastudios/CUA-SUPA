@@ -10,7 +10,7 @@
     "ios": "TAMAGUI_TARGET=native yarn expo run:ios",
     "web": "TAMAGUI_TARGET=web yarn expo start --web",
     "eject": "expo eject",
-    "start": "expo start --dev-client"
+    "start": "TAMAGUI_TARGET=native expo start --dev-client"
   },
   "dependencies": {
     "@babel/runtime": "^7.18.9",

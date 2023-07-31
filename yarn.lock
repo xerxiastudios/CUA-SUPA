@@ -3845,9 +3845,9 @@ __metadata:
   dependencies:
     "@clerk/nextjs": ^4.23.1
     "@my/db": "*"
-    "@supabase/auth-helpers-nextjs": ^0.7.3
-    "@supabase/auth-helpers-react": "^0.4.1 "
-    "@supabase/supabase-js": ^2.31.0
+    "@supabase/auth-helpers-nextjs": ^0.7.2
+    "@supabase/auth-helpers-react": ^0.4.0
+    "@supabase/supabase-js": 2.25.0
     "@trpc/client": ^10.35.0
     "@trpc/server": ^10.35.0
     eslint: ^8.45.0
@@ -3872,7 +3872,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@my/ui@workspace:packages/ui"
   dependencies:
-    "@shopify/flash-list": ^1.5.0
     "@tamagui/animations-react-native": ^1.48.2
     "@tamagui/build": ^1.48.2
     "@tamagui/font-inter": ^1.48.2
@@ -3882,6 +3881,7 @@ __metadata:
     "@tamagui/toast": ^1.48.2
     "@tanstack/react-virtual": ^3.0.0-beta.54
     jotai: ^2.2.2
+    react-native-big-list: ^1.6.1
     tamagui: ^1.48.2
   languageName: unknown
   linkType: soft
@@ -4508,20 +4508,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@shopify/flash-list@npm:^1.5.0":
-  version: 1.5.0
-  resolution: "@shopify/flash-list@npm:1.5.0"
-  dependencies:
-    recyclerlistview: 4.2.0
-    tslib: 2.4.0
-  peerDependencies:
-    "@babel/runtime": "*"
-    react: "*"
-    react-native: "*"
-  checksum: 0abe0651e4cd8c22784b57137b25791f5991374d324afffd7aef3d87bea2de603dddfcd340f1533ebeb1473e5f51b7b854fe0a60cccfdbd1fb9f89b59b50d9ec
-  languageName: node
-  linkType: hard
-
 "@sideway/address@npm:^4.1.3":
   version: 4.1.4
   resolution: "@sideway/address@npm:4.1.4"
@@ -4577,7 +4563,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/auth-helpers-nextjs@npm:^0.7.3":
+"@supabase/auth-helpers-nextjs@npm:^0.7.2":
   version: 0.7.3
   resolution: "@supabase/auth-helpers-nextjs@npm:0.7.3"
   dependencies:
@@ -4589,7 +4575,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/auth-helpers-react@npm:^0.4.1 ":
+"@supabase/auth-helpers-react@npm:^0.4.0":
   version: 0.4.1
   resolution: "@supabase/auth-helpers-react@npm:0.4.1"
   peerDependencies:
@@ -4618,7 +4604,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/gotrue-js@npm:^2.46.1":
+"@supabase/gotrue-js@npm:^2.26.0":
   version: 2.46.1
   resolution: "@supabase/gotrue-js@npm:2.46.1"
   dependencies:
@@ -4656,17 +4642,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@supabase/supabase-js@npm:^2.31.0":
-  version: 2.31.0
-  resolution: "@supabase/supabase-js@npm:2.31.0"
+"@supabase/supabase-js@npm:2.25.0":
+  version: 2.25.0
+  resolution: "@supabase/supabase-js@npm:2.25.0"
   dependencies:
     "@supabase/functions-js": ^2.1.0
-    "@supabase/gotrue-js": ^2.46.1
+    "@supabase/gotrue-js": ^2.26.0
     "@supabase/postgrest-js": ^1.7.0
     "@supabase/realtime-js": ^2.7.3
     "@supabase/storage-js": ^2.5.1
     cross-fetch: ^3.1.5
-  checksum: e6ca7e8480865368f6aef36f464aa2f58288ec9ba4823923888095b35e510fe6c2197e59b91e96c137f3683dfb704df4ccb41a04752040d18e3c2be54d8106b8
+  checksum: 01ab763f863473c5a499b65a4b953b44202e995f58d251249393bc5071cfcce172ca038a87b28b35c66ab91828d920d1a405f13445f702466e788e8c97f04a98
   languageName: node
   linkType: hard
 
@@ -7092,7 +7078,6 @@ __metadata:
     "@clerk/nextjs": ^4.6.15
     "@my/ui": "*"
     "@react-native-async-storage/async-storage": ^1.17.11
-    "@shopify/flash-list": ^1.5.0
     "@tamagui/animations-react-native": ^1.48.2
     "@tamagui/colors": ^1.48.2
     "@tamagui/font-inter": ^1.48.2
@@ -7108,6 +7093,8 @@ __metadata:
     expo-linking: ~5.0.2
     expo-secure-store: ^12.3.1
     js-cookie: ^3.0.5
+    react-native-big-list: ^1.6.1
+    react-native-mmkv: ^2.10.1
     react-native-safe-area-context: 4.7.1
     solito: ^4.0.1
   languageName: unknown
@@ -10027,7 +10014,6 @@ __metadata:
     "@clerk/clerk-expo": ^0.10.16
     "@expo/metro-config": ^0.5.2
     "@my/ui": "*"
-    "@shopify/flash-list": ^1.5.0
     "@tamagui/babel-plugin": 1.48.2
     "@types/react-native": ~0.70.6
     app: "*"
@@ -10050,6 +10036,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-native: ^0.72.3
+    react-native-big-list: ^1.6.1
     react-native-dotenv: ^3.4.9
     react-native-gesture-handler: ~2.12.0
     react-native-safe-area-context: 4.6.3
@@ -12886,7 +12873,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.debounce@npm:4.0.8, lodash.debounce@npm:^4.0.8":
+"lodash.debounce@npm:^4.0.8":
   version: 4.0.8
   resolution: "lodash.debounce@npm:4.0.8"
   checksum: a3f527d22c548f43ae31c861ada88b2637eb48ac6aa3eb56e82d44917971b8aa96fbb37aa60efea674dc4ee8c42074f90f7b1f772e9db375435f6c83a19b3bc6
@@ -15033,7 +15020,7 @@ prisma@latest:
   languageName: node
   linkType: hard
 
-"prop-types@npm:*, prop-types@npm:15.8.1, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:*, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -15327,6 +15314,20 @@ prisma@latest:
   languageName: node
   linkType: hard
 
+"react-native-big-list@npm:^1.6.1":
+  version: 1.6.1
+  resolution: "react-native-big-list@npm:1.6.1"
+  dependencies:
+    prop-types: ^15.8.1
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-native": "*"
+    react: "*"
+    react-native: "*"
+  checksum: e0e8ce1ab026d7cefdf7e00b46089ef1ae0e7081fdb3b54b93aaafc2469c817e1695279cbbe50099914318a20a437675bd6926d4ca5c45698fa356a7af375f67
+  languageName: node
+  linkType: hard
+
 "react-native-dotenv@npm:^3.4.9":
   version: 3.4.9
   resolution: "react-native-dotenv@npm:3.4.9"
@@ -15351,6 +15352,16 @@ prisma@latest:
     react: "*"
     react-native: "*"
   checksum: 1aec3d71c5fd3b8087e613708ee77a0ce7a1ac2bc87f5a6a22529300795b48aaa2359bcba7309f2c14f9de1ca1ffa4904d06b3cb7263820f657a4469976aecb3
+  languageName: node
+  linkType: hard
+
+"react-native-mmkv@npm:^2.10.1":
+  version: 2.10.1
+  resolution: "react-native-mmkv@npm:2.10.1"
+  peerDependencies:
+    react: "*"
+    react-native: ">=0.71.0"
+  checksum: 2db42a667acd104047ddf307e852ffd9d9c6302454364fcc4cd35d8510d6f500bcd3562e14d95ae7fd520eac1cd3cc8a239c539a7339b70a4e6fd2d3f70daee7
   languageName: node
   linkType: hard
 
@@ -15697,20 +15708,6 @@ prisma@latest:
     source-map: ~0.6.1
     tslib: ^2.0.1
   checksum: 03cc7f57562238ba258d468be67bf7446ce7a707bc87a087891dad15afead46c36e9aaeedf2130e2ab5a465244a9c62bfd4127849761cf8f4085abe2f3e5f485
-  languageName: node
-  linkType: hard
-
-"recyclerlistview@npm:4.2.0":
-  version: 4.2.0
-  resolution: "recyclerlistview@npm:4.2.0"
-  dependencies:
-    lodash.debounce: 4.0.8
-    prop-types: 15.8.1
-    ts-object-utils: 0.0.5
-  peerDependencies:
-    react: ">= 15.2.1"
-    react-native: ">= 0.30.0"
-  checksum: 6cba6a99fb487067c509112b94e3d4d3905d782bbcb7af2cffbd57c601a4650d670e4eee5fec18d195d58ff6ec01a47288c5510379a2f37da3c5fc0a58860441
   languageName: node
   linkType: hard
 
@@ -17558,13 +17555,6 @@ prisma@latest:
   languageName: node
   linkType: hard
 
-"ts-object-utils@npm:0.0.5":
-  version: 0.0.5
-  resolution: "ts-object-utils@npm:0.0.5"
-  checksum: 83c48fbdaba392fb2c01cea53b267ed5538d2bb44fc6c3eecc10bcfabc1780bfa6ec8569b52bbf0140d9b521d9049d5f15884e12286918244d463d854dbc73cb
-  languageName: node
-  linkType: hard
-
 "tsconfig-paths@npm:^3.14.1":
   version: 3.14.1
   resolution: "tsconfig-paths@npm:3.14.1"
@@ -17574,13 +17564,6 @@ prisma@latest:
     minimist: ^1.2.6
     strip-bom: ^3.0.0
   checksum: 8afa01c673ebb4782ba53d3a12df97fa837ce524f8ad38ee4e2b2fd57f5ac79abc21c574e9e9eb014d93efe7fe8214001b96233b5c6ea75bd1ea82afe17a4c6d
-  languageName: node
-  linkType: hard
-
-"tslib@npm:2.4.0":
-  version: 2.4.0
-  resolution: "tslib@npm:2.4.0"
-  checksum: 8c4aa6a3c5a754bf76aefc38026134180c053b7bd2f81338cb5e5ebf96fefa0f417bff221592bf801077f5bf990562f6264fecbc42cd3309b33872cb6fc3b113
   languageName: node
   linkType: hard
 

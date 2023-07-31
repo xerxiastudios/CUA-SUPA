@@ -38,15 +38,15 @@ Install dependencies
   yarn install
 ```
 
+Make a copy of .env.example and remove .example
+
+Enter your supabase url keys in the .env file
+
 To push DB schema
 
 ```bash
   yarn db-push
 ```
-
-Make a copy of .env.example and remove .example
-
-Enter your supabase url keys in the .env file
 
 Always run web first from root directory, it will start the trpc server.
 

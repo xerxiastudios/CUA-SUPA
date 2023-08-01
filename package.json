@@ -6,9 +6,6 @@
     "packages/*"
   ],
   "packageManager": "yarn@3.3.1",
-  "prisma": {
-    "schema": "./packages/db/prisma/schema.prisma"
-  },
   "scripts": {
     "web": "turbo run dev --filter nextjs",
     "native": "cd apps/expo && yarn dev",
@@ -18,10 +15,10 @@
     "clean:workspaces": "turbo clean",
     "db-push": "turbo db-push",
     "postinstall": "yarn build:ui && yarn generate",
-    "generate": "cd packages/db && yarn prisma generate",
+    "generate": "cd packages/db && yarn drizzle-kit generate:pg",
     "build:ui": "cd packages/ui && yarn build",
     "build-desktop": "turbo run build:tauri --filter nextjs",
-    "studio": " cd packages/db && yarn prisma:studio",
+    "studio": " cd packages/db && yarn drizzle:studio",
     "upgrade:tamagui": "manypkg upgrade tamagui && manypkg upgrade @tamagui && manypkg upgrade tamagui-loader"
   },
   "resolutions": {

@@ -1,9 +1,7 @@
-import { prisma } from "@my/db";
+import { drizzle } from "@my/db";
 import { createPagesServerClient } from "@supabase/auth-helpers-nextjs";
 import { inferAsyncReturnType } from "@trpc/server";
 import { CreateNextContextOptions } from "@trpc/server/adapters/next";
-
-//import { getAuth, clerkClient } from "@clerk/nextjs/server";
 
 import type { User } from "@supabase/supabase-js";
 
@@ -24,7 +22,7 @@ type IUserProps = {
 export const createContextInner = async ({ user }: IUserProps) => {
   return {
     user,
-    prisma,
+    drizzle,
   };
 };
 
@@ -43,10 +41,6 @@ export const createContext = async (opts: CreateNextContextOptions) => {
       data: { user },
     } = await supabaseServerClient.auth.getUser();
 
-    //clerk code:
-    //const { userId } = getAuth(opts.req);
-    //get full user object
-    //const user = userId ? await clerkClient.users.getUser(userId) : null;
     return user;
   }
 

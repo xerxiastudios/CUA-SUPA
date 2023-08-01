@@ -1,5 +1,5 @@
 
-# CUA-SUPA
+# CUA-SUPA- With Drizzle - Currenly trpc is not working. Using this branch is not recommended for now. Use main branch with prisma.
 
 This repo is update version of original create-universal-app (CUA) with Supabase
 

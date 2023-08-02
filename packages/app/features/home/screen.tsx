@@ -81,6 +81,14 @@ export function HomeScreen() {
 
       <Button
         onPress={() => {
+          push("/dashboard");
+        }}
+      >
+        Dashboard
+      </Button>
+
+      <Button
+        onPress={() => {
           push("/user/nate");
         }}
       >

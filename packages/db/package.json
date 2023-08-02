@@ -9,12 +9,9 @@
     "build": "tsc",
     "drizzle:studio": "yarn with-env drizzle-kit studio",
     "drizzle:generate": "yarn with-env drizzle-kit generate:pg",
-    "drizzle:migrate": "yarn with-env drizzle-kit generate:pg",
-    "drizzle:migrate:dev": "yarn with-env drizzle-kit generate:pg",
+    "drizzle:deploy": "yarn with-env drizzle-kit push:pg",
     "clean": "rm -rf .turbo node_modules",
-    "with-env": "dotenv -e ../../.env --",
-    "db-push": "yarn db-generate",
-    "db-generate": "yarn with-env drizzle-kit generate:pg"
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
     "drizzle-orm": "^0.27.2",

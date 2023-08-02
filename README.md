@@ -16,6 +16,7 @@ TRPC,
 Prisma,
 Tamagui
 
+There is also a drizzle branch for those prefering drizzle.
 
 
 ## Run Locally

@@ -1,5 +1,5 @@
 
-# CUA-SUPA- With Drizzle - Currenly trpc is not working. Using this branch is not recommended for now. Use main branch with prisma.
+# CUA-SUPA- With Drizzle
 
 This repo is update version of original create-universal-app (CUA) with Supabase
 
@@ -42,10 +42,16 @@ Make a copy of .env.example and remove .example
 
 Enter your supabase url keys in the .env file
 
-To push DB schema
+To generate db migrations - cd packages/db
 
 ```bash
-  yarn db-push
+  yarn drizzle:generate
+```
+
+To push migrations - cd packages/db
+
+```bash
+  yarn drizzle:deploy
 ```
 
 Always run web first from root directory, it will start the trpc server.

@@ -30,7 +30,7 @@ export function HomeScreen() {
     });
   }, []);
 
-  const { data, isLoading, error } = trpc.entry.all.useQuery();
+  // const { data, isLoading, error } = trpc.entry.all.useQuery();
 
   return (
     <YStack f={1} jc="center" ai="center" p="$4" space>
@@ -72,11 +72,11 @@ export function HomeScreen() {
       <H3 ta="center">Some Demos</H3>
       <YStack p="$2">
         <Paragraph>tRPC Query Demo</Paragraph>
-        {data?.map((entry) => (
+        {/* {data?.map((entry) => (
           <Paragraph opacity={0.5} key={entry.id}>
             {entry.id}
           </Paragraph>
-        ))}
+        ))} */}
       </YStack>
 
       <Button

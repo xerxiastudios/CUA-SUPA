@@ -7,22 +7,19 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "prisma:generate": "yarn with-env prisma generate",
-    "prisma:studio": "yarn with-env prisma studio",
-    "prisma:migrate": "yarn with-env prisma migrate",
-    "prisma:migrate:dev": "yarn with-env prisma migrate dev",
+    "drizzle:studio": "yarn with-env drizzle-kit studio",
+    "drizzle:generate": "yarn with-env drizzle-kit generate:pg",
+    "drizzle:deploy": "yarn with-env drizzle-kit push:pg",
     "clean": "rm -rf .turbo node_modules",
-    "with-env": "dotenv -e ../../.env --",
-    "dev": "yarn with-env prisma studio --port 5556",
-    "db-push": "yarn with-env prisma db push",
-    "db-generate": "yarn with-env prisma generate"
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
-    "@prisma/client": "latest"
+    "drizzle-orm": "^0.27.2",
+    "postgres": "^3.3.5"
   },
   "devDependencies": {
     "dotenv-cli": "^7.2.1",
-    "prisma": "latest",
+    "drizzle-kit": "^0.19.12",
     "typescript": "^5.1.6"
   }
 }

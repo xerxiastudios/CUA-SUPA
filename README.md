@@ -1,5 +1,5 @@
 
-# CUA-SUPA
+# CUA-SUPA- With Drizzle - Currenly trpc is not working. Using this branch is not recommended for now. Use main branch with prisma.
 
 This repo is update version of original create-universal-app (CUA) with Supabase
 
@@ -13,7 +13,7 @@ Next 13 (pages) - can easily extend to New App Router,
 Expo 49,
 Solito 4,
 TRPC,
-Prisma,
+Drizzle,
 Tamagui
 
 
@@ -60,13 +60,13 @@ Then you can start native(mobile) from root directory, it will start the metro s
   yarn native
 ```
 
-To start Prisma studio.
+To start Drizzle studio.
 
 ```bash
   yarn studio
 ```
 
-To check wether trpc server is working or not add some data in entries table in prisma studio and refresh the page. If you see the data in the list then trpc server is working.
+To check wether trpc server is working or not add some data in entries table in drizzle studio and refresh the page. If you see the data in the list then trpc server is working.
 
 
 ## Acknowledgements

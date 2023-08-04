@@ -5,14 +5,14 @@ import { MoreHorizontal } from "@tamagui/lucide-icons";
 
 export function TrendingList() {
   return (
-    <YStack f={1} p={16}>
-      <Paragraph color={"white"} fow="800" fontSize={"$7"}>
+    <YStack p={16} bg={"#16181c"} br={"$6"}>
+      <Paragraph color={"white"} fow="800" fontSize={"$5"}>
         What's happening
       </Paragraph>
 
       <YStack mt={"$5"} space={"$2"}>
         {trendingData.map((item, index) => {
-          return <TrendingListItem item={item} index={index} />;
+          return <TrendingListItem item={item} key={index} />;
         })}
       </YStack>
     </YStack>
@@ -47,9 +47,9 @@ const trendingData = [
   },
 ];
 
-const TrendingListItem = (item: String, index: number) => {
+const TrendingListItem = ({ item }) => {
   return (
-    <YStack key={index}>
+    <YStack>
       <XStack ai={"center"} jc={"space-between"}>
         <Paragraph color={"gray"} fow="400" fontSize={13}>
           {item.trendingName}

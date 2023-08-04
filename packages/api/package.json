@@ -17,6 +17,7 @@
   },
   "devDependencies": {
     "eslint": "^8.45.0",
+    "supabase": "^1.82.6",
     "typescript": "^5.1.6"
   }
 }

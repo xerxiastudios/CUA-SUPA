@@ -7,7 +7,7 @@ import { FeedItemList } from "./FeedItemList";
 
 export function FeedList() {
   return (
-    <XStack f={1}>
+    <XStack f={1} mr={"$6"}>
       <Stack
         ml={"$10"}
         style={{ borderRightWidth: 0.01, borderColor: "gray" }}

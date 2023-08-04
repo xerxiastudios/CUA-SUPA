@@ -1,7 +1,7 @@
 import React from "react";
 import { Pressable } from "react-native";
 
-import { Avatar, Button, Paragraph, XStack, YStack } from "@my/ui";
+import { Avatar, Button, Paragraph, useMedia, XStack, YStack } from "@my/ui";
 import {
   Bell,
   Bookmark,
@@ -47,11 +47,12 @@ const sideDrawerData = [
 ];
 
 export const SideDrawer = () => {
+  const media = useMedia();
   return (
     <YStack
       // bg={"#1A8123"}
       w={"$14"}
-      ml={"$10"}
+      ml={media.gtLg ? "$20" : media.gtMd ? "$13" : "$10"}
       mt={"$10"}
       mb={"$4"}
     >

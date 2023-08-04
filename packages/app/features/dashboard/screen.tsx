@@ -4,7 +4,7 @@ import { useMedia, XStack, YStack } from "@my/ui";
 import { FeedList } from "@my/ui/src/components/FeedList";
 import { FollowList } from "@my/ui/src/components/FollowList";
 import { GetVerified } from "@my/ui/src/components/GetVerified";
-import { SideDrawer } from "@my/ui/src/components/SideDrawer";
+import { SideDrawer, SideDrawerSm } from "@my/ui/src/components/SideDrawer";
 import { TrendingList } from "@my/ui/src/components/TrendingList";
 
 export function DashboardScreen() {
@@ -12,7 +12,7 @@ export function DashboardScreen() {
   return (
     <YStack f={1} bg={"rgb(20,20,20)"}>
       <XStack f={1}>
-        {media.gtMd && <SideDrawer />}
+        {media.gtMd ? <SideDrawer /> : <SideDrawerSm />}
 
         <FeedList />
         {media.gtSm && (

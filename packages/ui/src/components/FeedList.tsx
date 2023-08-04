@@ -1,15 +1,16 @@
 import React from "react";
 
-import { Paragraph, Stack, XStack, YStack } from "@my/ui";
+import { Paragraph, Stack, useMedia, XStack, YStack } from "@my/ui";
 
 import { FeedInput } from "./FeedInput";
 import { FeedItemList } from "./FeedItemList";
 
 export function FeedList() {
+  const media = useMedia();
   return (
     <XStack f={1} mr={"$6"}>
       <Stack
-        ml={"$10"}
+        ml={media.gtMd ? "$10" : "$4"}
         style={{ borderRightWidth: 0.01, borderColor: "gray" }}
       />
       <YStack f={1}>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Pressable } from "react-native";
+import { useRouter } from "solito/router";
 
 import {
   Avatar,
@@ -58,6 +59,12 @@ const sideDrawerData = [
 ];
 
 export const SideDrawer = () => {
+  const { push } = useRouter();
+
+  const goToProfile = () => {
+    push("/profile");
+  };
+
   const media = useMedia();
   return (
     <YStack
@@ -96,7 +103,7 @@ export const SideDrawer = () => {
         </Button>
       </YStack>
 
-      <Pressable>
+      <Pressable onPress={goToProfile}>
         <XStack alignItems="center">
           <Avatar circular size="$3">
             <Avatar.Image

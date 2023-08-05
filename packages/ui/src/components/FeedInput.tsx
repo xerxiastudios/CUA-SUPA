@@ -1,5 +1,3 @@
-import React from "react";
-
 import { Avatar, Button, XStack, YStack } from "@my/ui";
 import { Stack } from "@tamagui/core";
 import {
